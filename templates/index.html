@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Processor</title>
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://th.bing.com/th/id/OIP.XbHCE-YmZCxbEov1hV39jQHaD4?rs=1&pid=ImgDetMain') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 90%;
+            background: rgba(255, 255, 255, 0.9); /* Slightly higher opacity */
+            padding: 25px 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: #0056b3;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 15px 0 10px;
+        }
+
+        input[type="file"] {
+            width: 100%;
+            max-width: 400px;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-bottom: 20px;
+            border: 2px solid #000; /* 2px thick, solid, black border */
+  border-radius: 5px; /* Rounded corners with a radius of 5px */
+            
+        }
+
+        button {
+            background-color: #0056b3;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+
+        }
+
+        button:hover {
+            background-color: #003d80;
+        }
+
+        .note {
+            font-size: 14px;
+            color: #666;
+            margin-top: 15px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            button {
+                width: 100%;
+                padding: 10px;
+            }
+
+            input[type="file"] {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Upload CSV Files</h1>
+        <form action="/process" method="POST" enctype="multipart/form-data">
+            <label for="file1">File 1 (Faculty Reference):</label>
+            <input type="file" name="file1" id="file1" required>
+            <label for="file2">File 2 (Student Application):</label>
+            <input type="file" name="file2" id="file2" required>
+            <button type="submit">Process Files</button>
+        </form>
+        <p class="note">Supported formats: CSV</p>
+    </div>
+</body>
+</html>

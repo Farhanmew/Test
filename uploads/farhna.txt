@@ -1,0 +1,21 @@
+figure out the column that needs to be included  from the faculty file Q9#1_1 to   Q9#1_12  faculty Total score =  60 5*12 # first we take a separate sheet and extract out the 12 column of marking from the csv file and then generate a new csv file from it 
+
+
+# input csv of the faculty refrence 
+# Data cleaning Means removing the unimp colums and only keeping the imp ones 
+# generating the new sheet from the selected colums
+# gernatiing the new sheet with the numbering system int he sheet 1 to 5  poor good very good excellent 
+
+
+among those column the makring will be on the basis of   very poor poor good verygoof excellent [1,2,3,4,5]
+
+
+
+
+now from both the sheets th common thing is the name of the student , ku id 
+
+
+And then we have the give marcs according to the student sheet in ehich we have field such as (no of times app has applied , GPA, 
+
+
+
